@@ -1,48 +1,39 @@
-import React  from "react";
-import  ReactDOM   from "react-dom/client";
-import { sampleData } from "./data"
-import Project from "./Project";
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Body from "./Body";
+import Header  from "./Header";
+import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import Inventories from "./Inventories";
 
-const App = ()=>{
-    console.log(sampleData);
-    sampleData.map((p)=>{
-        console.log(p)
-    })
-  
-  return (<div className="text-sm flex flex wrap">
-    {
-        sampleData.map((p)=>(            
-            <Project data = {p}></Project>
-        ))
-    }
-
-
-    
-    
-  </div>)
-}
+const App = () => {  
+  return (
+    <div>
+      <Header></Header>
+      <Outlet></Outlet>
+    </div>
+  );
+};
 
 const RouterElement = () => {
-    const appRoutes = createBrowserRouter([
+  const appRoutes = createBrowserRouter([
+    {
+      path: "/",
+      element: <App />,
+      children: [
         {
-            path: "/",
-            element: <App />,
-          },
-          {
-            path: "/:id/inventories",
-            element: <Inventories />,
-          }
-    ]);
-    return <RouterProvider router={appRoutes} />;
-  };
+          path: "/",
+          element: <Body />,
+        },
+        {
+          path: "/:id/inventories",
+          element: <Inventories />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={appRoutes} />;
+};
 
-
-
-var root = document.getElementById('rootElement')
-var rootElement = ReactDOM.createRoot(root)
-rootElement.render(<RouterElement>
-
-</RouterElement>)
-
+var root = document.getElementById("rootElement");
+var rootElement = ReactDOM.createRoot(root);
+rootElement.render(<RouterElement></RouterElement>);
