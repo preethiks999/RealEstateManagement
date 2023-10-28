@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Inventories from "./Inventories";
 import HomePage from "./HomePage";
 import App from "./App";
+import About from "./About";
+import Contact from "./Contact";
 
 const RouterElement = () => {
   const appRoutes = createBrowserRouter([
@@ -17,6 +19,14 @@ const RouterElement = () => {
         {
           path: "/:id/inventories",
           element: <Inventories />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
