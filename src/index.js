@@ -11,7 +11,7 @@ const App = ()=>{
         console.log(p)
     })
   
-  return (<div className="text-sm">
+  return (<div className="text-sm flex flex wrap">
     {
         sampleData.map((p)=>(            
             <Project data = {p}></Project>
