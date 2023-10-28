@@ -3,7 +3,7 @@ import { sampleData } from "./data";
 const Inventories = () => {
   const { id } = useParams();
   return (
-    <div>
+    <div className="m-2">
       {sampleData
         .filter((x) => x.projectId == id)[0]
         .inventories.map((i) => {
