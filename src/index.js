@@ -4,6 +4,8 @@ import Body from "./Body";
 import Header  from "./Header";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import Inventories from "./Inventories";
+import Contact from "./Contact";
+import About from "./About";
 
 const App = () => {  
   return (
@@ -27,6 +29,14 @@ const RouterElement = () => {
         {
           path: "/:id/inventories",
           element: <Inventories />,
+        },
+        {
+          path: "/About",
+          element: <About />,
+        },
+        {
+          path: "/Contact",
+          element: <Contact />,
         },
       ],
     },

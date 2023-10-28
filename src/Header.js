@@ -7,7 +7,7 @@ const Header = () => {
       <div className="logo-container">
         <img  src="https://source.unsplash.com/random/100x100/"></img>
       </div>
-      <div className="flex items-center">
+      <div className="flex">
         <ul className="flex p-4 m-4">
         
           <li className="px-4"><Link to="/">Home</Link></li>
