@@ -4,7 +4,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="text-sm">
+    <div className="">
       {sampleData.map((p, index) => (
         <Project key={index} data={p}></Project>
       ))}

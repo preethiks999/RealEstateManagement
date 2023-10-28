@@ -1,4 +1,4 @@
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 const Project = (data) => {
   const { data: details } = data;
 
@@ -6,14 +6,12 @@ const Project = (data) => {
   const formAddress = (addressData) => {
     return `plot no : ${addressData.plotNo} , sector : ${addressData.sector}, ${addressData.elevation}`;
   };
-  
-  const clickHandler = ()=>{
-    navigate(`/${details.projectId}/inventories`)
-  }
 
-  console.log(details);
+  const clickHandler = () => {
+    navigate(`/${details.projectId}/inventories`);
+  };
   return (
-    <div >
+    <div>
       <div onClick={clickHandler} className="m-6 flex flex-wrap cursor-pointer">
         <div className="mr-2">
           <img
