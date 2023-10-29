@@ -17,7 +17,7 @@ const Project = ({ data: details }) => {
   return (
     <div
       onClick={clickHandler}
-      className="flex shadow-lg cursor-pointer m-2 p-2 w-[300px] bg-gray-200 hover:bg-gray-300 rounded-lg"
+      className="flex shadow-lg cursor-pointer p-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
     >
       <img 
         src="https://housing-images.n7net.in/4f2250e8/d451e2b1846778325148e2af061719b7/v0/large/vandemataram_mahadev_lily-maninagar_ahmedabad-ahmedabad-vyapti_vandemataram_group.jpeg"
