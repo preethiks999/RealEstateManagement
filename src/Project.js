@@ -29,7 +29,7 @@ const Project = ({ data: details }) => {
         <p>{details.developerName}</p>
         {/* <p>{formAddress(details)}</p> */}
         <p>{details.contact1}</p>
-        <p>{`${minPrice} L - ${maxPrice} L`}</p>
+        <p>{`₹ ${minPrice} L - ${maxPrice} L`}</p>
       </div>
     </div>
   );
