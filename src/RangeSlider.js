@@ -5,8 +5,7 @@ import Slider from '@material-ui/core/Slider';
 const RangeSlider = (props) => { 
 
   // Our States 
-  const [value, setValue] =  React.useState(props.minMaxRange);   
-  console.log(value)
+  const [value, setValue] =  React.useState(props.minMaxRange);     
   // Changing State when volume increases/decreases 
   const rangeSelector = (event, newValue) => {     
     setValue(newValue);    

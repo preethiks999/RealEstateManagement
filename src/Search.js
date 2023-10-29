@@ -9,8 +9,7 @@ const Search = (props) => {
     props.eventHandler(event.target.value);
   };
 
-  const priceHandler = (event) =>{
-     console.log(event)
+  const priceHandler = (event) =>{     
      props.filterPriceHandler(event)
   }
 
