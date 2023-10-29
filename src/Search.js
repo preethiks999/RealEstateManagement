@@ -26,7 +26,7 @@ const Search = (props)=>{
      {/* <label> Society </label> */}
      <input
        type="text"
-       className="shadow-lg mx-2 h-12 w-96 rounded-lg cursor-pointer  hover:border border-blue-300  bg-gray-100"
+       className="focus:outline shadow-lg mx-2 h-12 w-96 rounded-lg cursor-pointer px-2 hover:outline outline-blue-300 bg-gray-100"
        value={searchSociety}
        onChange={searchHandler}
        placeholder="Search for Project"
@@ -35,7 +35,7 @@ const Search = (props)=>{
      <select
        name="flats"
        id="flats"
-       className="shadow-lg mx-2 h-12 w-48 rounded-lg  hover:border border-blue-300 bg-gray-100"
+       className="shadow-lg mx-2 h-12 pl-1 w-48 rounded-lg  hover:border border-blue-300 bg-gray-100"
        value={selectedFlat}
        onChange={handleFlatChange}
      >      

@@ -43,7 +43,7 @@ const HomePage = () => {
   return (
     <>
       <Search eventHandler={searchHandler} flats = {result} flatsEventHandler = {searchFlatsHandler} ></Search>
-      <div className="grid grid-cols-auto-fit gap-x-12 gap-y-2 my-6 mx-3">
+      <div className="grid grid-cols-auto-fit gap-x-12 gap-y-4 my-6 mx-3">
         {filtered.map((p, index) => (
           <Project key={index} data={p}></Project> 
         ))}
