@@ -24,7 +24,7 @@ const RangeSlider = (props) => {
         onChange={rangeSelector} 
         valueLabelDisplay="auto"
       /> 
-      Your range of Price is between {value[0]} L and {value[1]} L 
+      Your range of Price is between ₹ {value[0]} L and ₹ {value[1]} L 
     </div> 
   ); 
 } 
